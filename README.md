@@ -24,3 +24,27 @@ sudo pm2 start node.js
 12. **Kết thúc**
 
 Bây giờ có thể sử dụng server ở địa chỉ: http://IP.Server.XXX:6789
+
+# Các API
+Copy curl này vào POSTMAN hoặc một phần mềm tương tự để test
+1. **Kiểm tra lịch sử giao dịch**
+```curl
+curl --location --request POST 'IP:6789/api/techcombank/getTransactions' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "username": "tk",
+    "password": "mk",
+    "begin": "28/12/2020",
+    "end": "26/02/2021"
+}'
+```
+
+- **Giải thích thông số POST**
+```json
+{
+    "begin": "DD/MM/YYYY",
+    "end": "DD/MM/YYYY",
+    "username": "ten_dang_nhap_TCB",
+    "password": "mat_khau_TCB"
+}
+```
