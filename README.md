@@ -9,7 +9,7 @@ sudo iptables -I INPUT -p tcp --dport 6789 -j ACCEPT
 
 **Cách cài đặt**
 
-1. **Cài đặt Mongo **
+1. **Cài đặt Mongo**
 2. **Cài đặt Nodejs**
 3. **Cài đặt PM2**
 
@@ -21,3 +21,6 @@ sudo pm2 start node.js
 
 > Để kiểm tra log thì dùng lệnh: sudo pm2 logs
 
+12. **Kết thúc**
+
+Bây giờ có thể sử dụng server ở địa chỉ: http://IP.Server.XXX:6789
