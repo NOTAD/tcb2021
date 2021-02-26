@@ -9,7 +9,7 @@ sudo iptables -I INPUT -p tcp --dport 6789 -j ACCEPT
 
 **Cách cài đặt**
 
-1. **Cài đặt Mongo**
+1. **Cài đặt MongoDB**
 2. **Cài đặt Nodejs**
 3. **Cài đặt PM2**
 
